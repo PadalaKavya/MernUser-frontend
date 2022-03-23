@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Register from './components/Register';
 import Login from './components/Login';
+import Profile from './components/Profile';
 import {Route, Routes} from 'react-router-dom';
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Route path="/Register" element={<Register />}>
       </Route>
       <Route exact path="/Login" element={<Login />}>
+      </Route>
+      <Route exact path="/Profile" element={<Profile />}>
       </Route>
     </Routes>
     
